@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Bridge Pog-out",
+    "description": "Fixing the 'Bridge Logout' one pog at a time.",
+    "version": "1.0",
+    "content_scripts": [
+        {
+          "matches": ["https://www.google.ca/*", "https://duckduckgo.com/*", "https://www.bing.com/*"],
+          "css": ["css/stylesheet.css"],
+          "js": ["js/content.js"]
+        }
+        ]
+  }
+  
