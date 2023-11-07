@@ -1,14 +1,19 @@
 {
     "manifest_version": 3,
-    "name": "Bridge Pog-out",
-    "description": "Fixing the 'Bridge Logout' one pog at a time.",
+    "name": "Fixing Bridge Logout",
+    "description": "This extension fixes the logout button upon search, for google.ca and google.com users",
     "version": "1.0",
+    "icons": {
+      "16": "16x16.png",
+      "32": "32x32.png",
+      "48": "48x48.png",
+      "128":"128x128.png"
+    },
     "content_scripts": [
         {
-          "matches": ["https://www.google.ca/*", "https://duckduckgo.com/*", "https://www.bing.com/*"],
+          "matches": ["https://www.google.ca/*","https://www.google.com/*"],
           "css": ["css/stylesheet.css"],
           "js": ["js/content.js"]
         }
         ]
   }
-  
